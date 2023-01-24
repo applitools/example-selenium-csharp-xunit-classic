@@ -36,7 +36,7 @@ public class ApplitoolsFixture : IDisposable
 
     // Create a new batch for tests.
     // A batch is the collection of visual checkpoints for a test suite.
-    // Batches are displayed in the dashboard, so use meaningful names.
+    // Batches are displayed in the Eyes Test Manager, so use meaningful names.
     Batch = new BatchInfo("Example: Selenium C# xUnit.net with the Classic runner");
 
     // Create a configuration for Applitools Eyes.
