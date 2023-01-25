@@ -87,13 +87,13 @@ public class AcmeBankTest : IDisposable
     /// <summary>
     /// Concludes the test by quitting the browser and closing Eyes.
     /// <summary>
-    public void Dispose() {
+    public void Dispose()
+    {
+        // Close Eyes to tell the server it should display the results.
+        Eyes.CloseAsync();
 
         // Quit the WebDriver instance.
         Driver.Quit();
-
-        // Close Eyes to tell the server it should display the results.
-        Eyes.CloseAsync();
 
         // Warning: `Eyes.CloseAsync()` will NOT wait for visual checkpoints to complete.
         // You will need to check the Eyes Test Manager for visual results per checkpoint.
